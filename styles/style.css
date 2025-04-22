@@ -54,7 +54,7 @@ body{
     color:  #ffffff;
 }
 .container .login-input .pw-input #hide-pw{
-    width: 20px;
+    width: 13px;
     display: none;
 }
 .container .login-input .forgot-pw ,
