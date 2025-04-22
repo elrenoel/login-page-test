@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
@@ -15,19 +15,24 @@
             <div class="login-input">
                 <input type="text" id="username" placeholder="username">
                 <input type="email" id="email" placeholder="email">
-                <input type="password" id="password" placeholder="password">
+                <div class="pw-input">
+                    <input type="password" id="password" placeholder="password">
+                    <img src="../asset/logo/hide.png" id="hide-pw">
+                </div>
                 <button class="btn">Sign Up</button>
                 <p class="other-login-description">Or Sign Up With</p>
                 <div class="other-login">
-                    <a href="#" class="sm-logo"><img src="asset/logo/search.png"></a>
-                    <a href="#" class="sm-logo"><img src="asset/logo/facebook.png"></a>
-                    <a href="#" class="sm-logo"><img src="asset/logo/linkedin.png"></a>
+                    <a href="#" class="sm-logo"><img src="../asset/logo/search.png"></a>
+                    <a href="#" class="sm-logo"><img src="../asset/logo/facebook.png"></a>
+                    <a href="#" class="sm-logo"><img src="../asset/logo/linkedin.png"></a>
                 </div>
-                <a href="sign-in.html" class="forgot-pw">Sing In?</a>
+                <a href="./sign-in.html" class="sign-in">Sing In?</a>
             </div>
         </div>
     </div>
     
+
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
