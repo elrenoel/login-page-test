@@ -13,26 +13,32 @@ body{
 }
 .container{
     width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 100%;
     max-width: 500px;
     padding: 50px 65px;
-    margin: 80px auto ;
     background: transparent;
     backdrop-filter: blur(6px);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
 }
-.container h1{
+.wrapper h1{
     text-align: center;
     color: #ffffff;
 }
-.container .login-input{
+.wrapper .login-input{
     display: flex;
     flex-direction: column;
     margin: 35px 0 10px;
 }
-.container .login-input #email,
-.container .login-input .pw-input,
-.container .login-input #username{
+.wrapper .login-input #email,
+.wrapper .login-input .pw-input,
+.wrapper .login-input #username{
     width: 100%;
     padding: 15px 18px;
     border-radius: 8px;
@@ -42,28 +48,28 @@ body{
     color: #ffffff;
     margin-bottom: 18px;
 }
-.container .login-input .pw-input{
+.wrapper .login-input .pw-input{
     display: flex;
     align-items: center;
 }
-.container .login-input .pw-input #password{
+.wrapper .login-input .pw-input #password{
     width: 100%;
     border: 0;
     outline: 0;
     background-color: transparent;
     color:  #ffffff;
 }
-.container .login-input .pw-input #hide-pw{
+.wrapper .login-input .pw-input #hide-pw{
     width: 13px;
     display: none;
 }
-.container .login-input .forgot-pw ,
-.container .login-input .other-login-description{
+.wrapper .login-input .forgot-pw ,
+.wrapper .login-input .other-login-description{
     color: #c9c9c9;
     font-size: 12px;
     text-align: center;
 }
-.container .login-input .btn{
+.wrapper .login-input .btn{
     padding: 10px;
     width: 100%;
     border-radius: 8px;
@@ -73,10 +79,10 @@ body{
     background-color:#461c55;
     color: #c9c9c9;
 }
-.container .login-input .btn:hover{
+.wrapper .login-input .btn:hover{
     background-color: #381745;
 }
-.container .login-input .other-login{
+.wrapper .login-input .other-login{
     display: flex;
     gap: 12px;
     margin: 18px auto;
@@ -95,16 +101,16 @@ body{
     height: 25px;
     object-fit: contain;
 }
-.container .login-input .create-acc{
+.wrapper .login-input .create-acc{
     color: #c9c9c9;
     font-size: 12px;
     text-align: center;
     text-decoration: none;
 }
-.container .login-input .create-acc:hover{
+.wrapper .login-input .create-acc:hover{
     color: #9a9999;
 }
-.container .login-input .sign-in{
+.wrapper .login-input .sign-in{
     color: #c9c9c9;
     font-size: 12px;
     text-align: center;
@@ -114,22 +120,21 @@ body{
     body{
         height: 100vh;
     }
-    .container{
+    .wrapper{
         width: 88%;
         font-size: 82%;
-        margin: 65px auto;
         padding: 35px 32px;
     }
-    .container .login-input #email,
-    .container .login-input .pw-input,
-    .container .login-input #username{
+    .wrapper .login-input #email,
+    .wrapper .login-input .pw-input,
+    .wrapper .login-input #username{
         padding: 13px 16px;
         font-size: 82%;
     }
-    .container .login-input .pw-input #password{
+    .wrapper .login-input .pw-input #password{
         font-size: 82%;
     }
-    .container .login-input .btn{
+    .wrapper .login-input .btn{
         font-size: 82%;
     }
     .login-input .other-login .sm-logo{
